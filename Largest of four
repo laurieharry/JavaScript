@@ -1,0 +1,25 @@
+/*Return an array consisting of the largest number
+from each provided sub-array. For simplicity, the provided array
+will contain exactly 4 sub-arrays.
+*/
+function largestOfFour(arr) {
+    console.log(arr[0]);
+    
+    var finalArr = [];
+  for (var i in arr){
+      var c = 0;
+      for (var b in arr[i]){//get into the subArray
+          if(arr[i][b] > c){
+              c = arr[i][b];//c is the biggest of the subArray
+              //console.log(c);
+          }
+         
+          }
+          finalArr.push(c);//append the biggest value to our new array
+          console.log(finalArr);
+      }
+      return finalArr;
+}
+ 
+
+largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
