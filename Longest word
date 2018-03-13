@@ -1,0 +1,20 @@
+
+function findLongestWord(str) {
+    var arr = str.split(' ');//make an array of words
+    console.log(arr); 
+    var longest = 0;//variable to store biggest number
+    for (var a in arr) {//for each word in the array, count the letters
+    var w = arr[a].length;
+    
+    if (w > longest){
+        longest = w;
+    }
+    
+    console.log(longest);
+}
+
+    
+  return longest;// return the bigggest letter count
+}
+
+findLongestWord("The quick brown fox jumped over the lazy dog");
