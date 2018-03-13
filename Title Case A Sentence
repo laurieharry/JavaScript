@@ -1,0 +1,19 @@
+
+function titleCase(str) {
+  var arr = str.toLowerCase().split(' ');//seperate each word into an array
+  
+  console.log(arr);
+  for (var word in arr){ //iterate through each word and convert the first letters to upper case
+      var arr2 = arr[word].split('');//split each word into an array so we can manipulate 
+      console.log(arr2);
+      arr2[0] = arr2[0].toUpperCase(); //first letter to upper case
+      console.log(arr2[0]);
+      arr[word] = arr2.join('');//convert the word back into a string and input into the original array
+  }
+  console.log(arr.join(" "));
+  return arr.join(' ');
+}
+
+titleCase("I'm a little beer pot");
+titleCase("I'm a liTTle tea pot"); //Upper case test
+
