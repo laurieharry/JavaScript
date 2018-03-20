@@ -1,0 +1,15 @@
+//Function confirms that a string ends with something.. (no using the EndsWith() function)
+
+function confirmEnding(str, target) {
+  console.log(str.length);
+  if (str.substring(str.length - target.length, str.length) == target){
+      console.log("true");
+      return true;
+  }
+  else{
+      console.log("false");
+      return false;
+  } 
+}
+
+confirmEnding("Bastian", "tian");
