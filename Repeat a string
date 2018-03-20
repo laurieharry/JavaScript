@@ -1,0 +1,13 @@
+
+function repeatStringNumTimes(str, num) {
+  // repeat after me
+    var newStr= "";
+    for(var c= 0; c < num; c++){
+    newStr+=str;
+    }
+    console.log(newStr);
+    
+  return newStr;
+}
+
+repeatStringNumTimes("abc", -2);
