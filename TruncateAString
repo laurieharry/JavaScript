@@ -1,0 +1,28 @@
+
+function truncateString(str, num) {
+  // Clear out that junk in your trunk
+    //console.log(str.slice(0, num)+"...");
+    if(num < str.length){
+        if(num <= 3){
+            console.log("yes");
+            return str.slice(0, num)+"...";
+            
+        }
+        else    {
+            console.log("no");
+            return str.slice(0, num-3)+"...";
+            
+        }
+    }
+    else{
+        return str;
+    }
+    
+}
+
+truncateString("A-", 1);
+truncateString("Absolutely Longer", 2);
+
+/*However, if the given maximum string length num is less than or equal to 3,
+then the addition of the three dots does not add to the string
+length in determining the truncated string*/
