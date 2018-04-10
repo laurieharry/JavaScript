@@ -1,0 +1,18 @@
+//Function to split an array into groups of a specified size, then return them both as part of a bigger array
+function chunkArrayInGroups(arr, size) {
+  
+  var BIGARRAY = [];//An empty array to push the new arrays into
+  var size2 = size; //interator variable to slice arrays with 
+  for (var c = 0; c < arr.length; c+=size){
+    var newArr = arr.slice(c, size2);//Create new arrays until we reach the end
+    BIGARRAY.push(newArr);//add each array to the BIG ONE
+    size2 += size; //increment
+  }
+  //console.log(newArr, newArr2);
+  console.log(BIGARRAY);
+  return BIGARRAY;
+}
+
+//chunkArrayInGroups(["a", "b", "c", "d"], 2);
+chunkArrayInGroups(["a", "b", "c", "d", "e", "f", "g", "end"], 4);
+
